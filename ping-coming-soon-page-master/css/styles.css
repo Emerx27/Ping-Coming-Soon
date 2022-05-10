@@ -1,0 +1,143 @@
+:root {
+    --blue: #4f7df3;
+    --paleBlue: #c2d3ff;
+    --lightRed: #ff5263;
+    --gray: #969696;
+    --veryDarkBlue: #151f29;
+    --white: #FFF;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+img {
+   max-width: 100%;
+   display: block;
+}
+
+body {
+    font-size: 16px; /* 1rem = 10px */
+    font-family: 'Libre Franklin', sans-serif;
+}
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.header {
+    text-align: center;
+    padding-top: 12rem;
+}
+
+.header__logo {
+    width: 8rem;
+    margin: 0 auto;
+}
+
+.header__titulo {
+    font-weight: 300;
+}
+
+.header__titulo--bold {
+    font-weight: 700;
+}
+
+.formulario__field {
+    border: none;
+    min-width: 100%;
+}
+
+.formulario__legend {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3.4rem;
+}
+
+.formulario__campos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;   
+}
+
+@media (min-width: 768px) {
+    .formulario__campos {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.formulario__btn {
+    background-color: var(--blue);
+    padding: 1.4rem 6rem;
+    border-radius: 5rem;
+    border: none;
+    color: var(--white);
+    text-align: center;
+}
+
+.formulario__btn:hover {
+    cursor: pointer;
+}
+
+.formulario__input {
+    border: 1px solid var(--paleBlue);
+    padding: 1.4rem 4rem;
+    border-radius: 5rem;
+    color: var(--gray);
+}
+
+@media (min-width: 768px) {
+    .formulario__input {
+        
+    width: 40rem;
+    }
+}
+
+.formulario__correcto {
+    border-color: green;
+}
+
+.formulario__error {
+    border-color: var(--lightRed);
+}
+
+
+.dashboard__imagen {
+    width: 60rem;
+    margin: 4rem auto 0 auto;
+}
+
+.footer__texto {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--gray);
+    margin-top: 5rem;
+}
+.error {
+    color: var(--lightRed);
+    text-align: center;
+    margin: 0;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+.enviar {
+    color: green;
+    text-align: center;
+    margin: 0;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Ping coming soon page</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="contenedor">
+
+  <header class="header">
+    <img class="header__logo" src="images/logo.svg" alt="PING">
+    <h1 class="header__titulo">We are launching <span class="header__titulo--bold">soon!</span></h1>
+  </header>
+
+  <main>
+    <form class="formulario">
+      <fieldset class="formulario__field">
+        <legend class="formulario__legend">Subscribe and get notified</legend>
+  
+        <div class="formulario__campos">
+          <input id="correo" class="formulario__input" type="email" placeholder="Your email address...">
+          <input class="formulario__btn" type="submit" value="Notify Me">
+        </div>
+      </fieldset>
+    </form>
+  </main>
+  
+  <section class="dashboard">
+    <img class="dashboard__imagen" src="images/illustration-dashboard.png" alt="illustration-dashboard">
+  </section>
+
+  <footer class="footer">
+    <p class="footer__texto">&copy; Copyright Ping. All rights reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
